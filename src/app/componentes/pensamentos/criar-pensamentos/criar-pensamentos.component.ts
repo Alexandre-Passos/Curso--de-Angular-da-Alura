@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pensamento } from '../pensamento/pensamento';
 
 @Component({
   selector: 'app-criar-pensamentos',
@@ -7,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPensamentosComponent implements OnInit {
 
-  pensamentos = {
-    id: '1',
+  pensamentos: Pensamento = {
+    id: 1,
     conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo: 'modelo1'
   }
+
 
   constructor() { }
 
